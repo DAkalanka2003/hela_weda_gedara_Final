@@ -1048,10 +1048,26 @@ ul {
    ========================================================================== */
 
 .rates-table-wrapper {
+    display: block;
+    width: 100%;
     border-radius: var(--radius-md);
-    overflow: hidden;
-    overflow-x: auto;
+    overflow-x: auto !important;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
     max-width: 780px; /* Restrict table width so it doesn't stretch to screen edges */
+}
+
+/* Scrollbar styles for the responsive table wrapper */
+.rates-table-wrapper::-webkit-scrollbar {
+    height: 6px;
+}
+.rates-table-wrapper::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 3px;
+}
+.rates-table-wrapper::-webkit-scrollbar-thumb {
+    background: var(--accent);
+    border-radius: 3px;
 }
 
 .consultation-info-grid {
@@ -1511,7 +1527,7 @@ input:focus, select:focus, textarea:focus {
     }
     
     .rates-table {
-        min-width: 550px !important;
+        min-width: 600px !important;
     }
     
     .logo-img {
