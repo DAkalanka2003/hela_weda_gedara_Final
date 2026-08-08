@@ -1048,26 +1048,10 @@ ul {
    ========================================================================== */
 
 .rates-table-wrapper {
-    display: block;
-    width: 100%;
     border-radius: var(--radius-md);
-    overflow-x: auto !important;
-    overflow-y: hidden;
-    -webkit-overflow-scrolling: touch;
+    overflow: hidden;
+    overflow-x: auto;
     max-width: 780px; /* Restrict table width so it doesn't stretch to screen edges */
-}
-
-/* Scrollbar styles for the responsive table wrapper */
-.rates-table-wrapper::-webkit-scrollbar {
-    height: 6px;
-}
-.rates-table-wrapper::-webkit-scrollbar-track {
-    background: rgba(0, 0, 0, 0.05);
-    border-radius: 3px;
-}
-.rates-table-wrapper::-webkit-scrollbar-thumb {
-    background: var(--accent);
-    border-radius: 3px;
 }
 
 .consultation-info-grid {
@@ -1526,8 +1510,29 @@ input:focus, select:focus, textarea:focus {
         gap: 15px;
     }
     
+    .rates-table-wrapper {
+        overflow-x: auto !important;
+        overflow-y: hidden !important;
+        -webkit-overflow-scrolling: touch !important;
+    }
+    
     .rates-table {
-        min-width: 600px !important;
+        min-width: 650px !important;
+    }
+    
+    .rates-table-wrapper::-webkit-scrollbar {
+        height: 6px !important;
+        display: block !important;
+    }
+    
+    .rates-table-wrapper::-webkit-scrollbar-track {
+        background: rgba(0, 0, 0, 0.05) !important;
+        border-radius: 3px !important;
+    }
+    
+    .rates-table-wrapper::-webkit-scrollbar-thumb {
+        background: var(--accent) !important;
+        border-radius: 3px !important;
     }
     
     .logo-img {
