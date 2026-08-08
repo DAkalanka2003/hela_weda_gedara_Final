@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../../images/logo.png">
+    <title>Academy || Weda Gedara || Traditional Medicine Academy</title>
+    <meta name="description" content="Master Traditional Sri Lankan Medicine & Ayurvedic Techniques at Weda Gedara Academy.">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="../../css/style.css?v=1.2">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+
+    <!-- Header Navigation -->
+    <header class="site-header">
+        <div class="container header-container">
+            <a href="../../index.html" class="logo-wrapper">
+                <img src="../../images/logo.png" alt="Weda Gedara Logo" class="logo-img">
+                <div class="logo-text">
+                    <h1>Weda Gedara</h1>
+                    <span>Authentic Ayurveda</span>
+                </div>
+            </a>
+            <nav class="main-nav">
+                <ul class="nav-links">
+                    <li><a href="../../index.html" class="nav-item">Home</a></li>
+                    <li><a href="../about/about.html" class="nav-item">About</a></li>
+                    <li><a href="../academy/academy.html" class="nav-item active">Academy</a></li>
+                    <li><a href="../ayurveda/ayurveda.html" class="nav-item">Ayurveda</a></li>
+                    <li><a href="../treatments/treatments.html" class="nav-item">Treatments</a></li>
+                    <li><a href="../consultation/consultation.html" class="nav-item">Consultation</a></li>
+                    <li><a href="../contact/contact.html" class="nav-item">Contact</a></li>
+                    <li><a href="../../admin/admin.php" class="nav-item" target="_blank">Admin</a></li>
+                </ul>
+                <button class="mobile-toggler" aria-label="Toggle Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Mobile Nav Panel -->
+    <div class="mobile-nav-overlay"></div>
+    <div class="mobile-nav-panel">
+        <a href="../../index.html" class="nav-item">Home</a>
+        <a href="../about/about.html" class="nav-item">About</a>
+        <a href="../academy/academy.html" class="nav-item active">Academy</a>
+        <a href="../ayurveda/ayurveda.html" class="nav-item">Ayurveda</a>
+        <a href="../treatments/treatments.html" class="nav-item">Treatments</a>
+        <a href="../consultation/consultation.html" class="nav-item">Consultation</a>
+        <a href="../contact/contact.html" class="nav-item">Contact</a>
+        <a href="../../admin/admin.php" class="nav-item" target="_blank">Admin</a>
+    </div>
+
+    <!-- Page Header Hero -->
+    <section class="video-promo-section" style="background-image: url('./images/academicheader.jpg'); height: 360px; border-radius: 0; margin-top: var(--header-height);">
+        <div class="video-promo-content">
+            <h1 style="color: white; font-size: 2.8rem; margin-bottom: 5px;">Weda Gedara Academy</h1>
+            <p style="color: rgba(255, 255, 255, 0.9); margin: 0;">Master Traditional Sri Lankan Medicine & Ayurvedic Techniques</p>
+        </div>
+    </section>
+
+    <!-- Course Selector Cards -->
+    <section class="section-padding container reveal-on-scroll">
+        <div class="section-header">
+            <span class="tagline" style="color: #1b4d22;">Choose Your Course</span>
+            <h2 id="academy_title">Select Course Type</h2>
+        </div>
+        
+        <div class="course-selector-grid">
+            <div class="selector-card-box active" data-target="local-students-panel">
+                <div class="icon-box"><i class="fa fa-home"></i></div>
+                <h3 id="academy_course1_title">Local Students</h3>
+                <p id="academy_course1_desc">3-month traditional medicine course</p>
+                <span class="price" id="academy_course1_price">LKR 50,000</span>
+            </div>
+            
+            <div class="selector-card-box" data-target="foreign-students-panel">
+                <div class="icon-box"><i class="fa fa-globe"></i></div>
+                <h3 id="academy_course2_title">International Students</h3>
+                <p id="academy_course2_desc">4-day orthopedic medicine course</p>
+                <span class="price" id="academy_course2_price">$350 USD</span>
+            </div>
+        </div>
+
+        <!-- Local Students Panel (English/Sinhala bilingual) -->
+        <div id="local-students-panel" class="course-detail-pane active">
+            <!-- Language toggle header -->
+            <div style="display: flex; justify-content: center; gap: 10px; margin-bottom: 40px; background-color: var(--accent-light); padding: 15px; border-radius: 50px;">
+                <button class="btn btn-primary language-btn active" data-lang="english" style="padding: 8px 24px; border-radius: 50px;">English</button>
+                <button class="btn btn-outline language-btn" data-lang="sinhala" style="padding: 8px 24px; border-radius: 50px; border-color: var(--primary);">සිංහල</button>
+            </div>
+
+            <!-- English Version -->
+            <div id="english-content" class="language-content">
+                <div class="course-info-layout">
+                    <div>
+                        <h2 id="course_detail_title">Traditional Medicine Course</h2>
+                        <p id="course_detail_desc">Comprehensive 3-month course designed to prepare you for the Traditional Medicine Examination. Guided by master native teachers to prepare you for state-level certifications.</p>
+                        
+                        <div class="course-meta-grid">
+                            <div class="course-meta-item">
+                                <i class="fa fa-clock"></i>
+                                <div>
+                                    <h4>Duration</h4>
+                                    <p id="course_duration">3 Months (Weekend classes only)</p>
+                                </div>
+                            </div>
+                            <div class="course-meta-item">
+                                <i class="fa fa-book-open"></i>
+                                <div>
+                                    <h4>Total Hours</h4>
+                                    <p id="course_hours">72 Hours (Theory: 40 hours | Practical: 32 hours)</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="course-outline">
+                            <h3>Syllabus Overview</h3>
+                            <div class="outline-accordion">
+                                <div class="accordion-item open">
+                                    <div class="accordion-header">
+                                        <h4>1. Theory Content (40 Hours)</h4>
+                                        <i class="fa fa-chevron-down"></i>
+                                    </div>
+                                    <div class="accordion-body">
+                                        <ul style="list-style: disc; padding-left: 20px;">
+                                            <li>Anatomy and Physiology (6 hours)</li>
+                                            <li>Traditional medicine core principles & pathological concepts</li>
+                                            <li>Herbal properties, identification, and usages</li>
+                                            <li>Safety and clinical hygiene</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <div class="accordion-header">
+                                        <h4>2. Practical Content (32 Hours)</h4>
+                                        <i class="fa fa-chevron-down"></i>
+                                    </div>
+                                    <div class="accordion-body">
+                                        <ul style="list-style: disc; padding-left: 20px;">
+                                            <li>Formulation of traditional oils, Mellum, Paththu, Peni Paththu, and Thelkira.</li>
+                                            <li>Clinical skills: Plant identification, bandaging techniques, bone-setting, joint subluxation and dislocation treatment.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Payment and CTA card -->
+                    <div style="background-color: var(--bg-light); padding: 30px; border-radius: var(--radius-md); border: 1px solid rgba(27, 94, 32, 0.08); align-self: start;">
+                        <h4 style="margin-bottom: 15px; color: var(--primary);">Investment Details</h4>
+                        <div style="font-size: 2rem; font-weight: 800; color: var(--primary); margin-bottom: 20px;">LKR 50,000</div>
+                        
+                        <div style="background-color: var(--white); padding: 15px; border-radius: var(--radius-sm); margin-bottom: 25px; border-left: 4px solid var(--accent);">
+                            <p style="margin-bottom: 8px; font-size: 0.9rem;" id="course_installment1">1st Installment: LKR 25,000 (At registration)</p>
+                            <p style="margin: 0; font-size: 0.9rem;" id="course_installment2">2nd Installment: LKR 25,000 (Before practicals)</p>
+                        </div>
+                        <a href="../contact/contact.html" class="btn btn-primary" style="width: 100%;">Enroll Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sinhala Version -->
+            <div id="sinhala-content" class="language-content sinhala-text" style="display: none;">
+                <div class="course-info-layout">
+                    <div>
+                        <h2>පාරම්පරික වෛද්‍ය පාඨමාලාව</h2>
+                        <p>පාරම්පරික වෛද්‍ය විභාගය සාර්ථකව මුහුණ දීමට සකස් කරන ලද සම්පූර්ණ මාස 3 පාඨමාලාව. විෂය නිර්දේශයට අදාළ න්‍යාය සහ ප්‍රායෝගික පුහුණුව නිවැරදිව ලබාදේ.</p>
+                        
+                        <div class="course-meta-grid">
+                            <div class="course-meta-item">
+                                <i class="fa fa-clock"></i>
+                                <div>
+                                    <h4>කාලය</h4>
+                                    <p>මාස 3 (සති අන්ත පන්ති පමණි - දිනකට පැය 6)</p>
+                                </div>
+                            </div>
+                            <div class="course-meta-item">
+                                <i class="fa fa-book-open"></i>
+                                <div>
+                                    <h4>මුළු පැය ගණන</h4>
+                                    <p>පැය 72 (න්‍යාය පැය 40 | ප්‍රායෝගික පැය 32)</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="course-outline">
+                            <h3>විෂය නිර්දේශය</h3>
+                            <div class="outline-accordion">
+                                <div class="accordion-item open">
+                                    <div class="accordion-header">
+                                        <h4>1. සෛද්ධාන්තික අන්තර්ගතය (පැය 40)</h4>
+                                        <i class="fa fa-chevron-down"></i>
+                                    </div>
+                                    <div class="accordion-body">
+                                        <ul style="list-style: disc; padding-left: 20px;">
+                                            <li>ශරීර විඤ්ඤාණය/ ශරීර රචනා නව්‍ය (පැය 6)</li>
+                                            <li>මූලධර්ම (රෝග සහ චිකිත්සා) සහ මූලික රෝග විඤ්ඤාණය</li>
+                                            <li>ඖෂධීය ශාක (ගුණ කර්ම සහ භාවිතයන්)</li>
+                                            <li>ආරක්ෂාව සහ සනීපාරක්ෂාව</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <div class="accordion-header">
+                                        <h4>2. ප්‍රායෝගික අන්තර්ගතය (පැය 32)</h4>
+                                        <i class="fa fa-chevron-down"></i>
+                                    </div>
+                                    <div class="accordion-body">
+                                        <ul style="list-style: disc; padding-left: 20px;">
+                                            <li>ඖෂධ සකස් කිරීම: තෙල් වර්ග, මැල්ලුම්, පත්තු, පැණි පත්තු සහ තෙල්කිර.</li>
+                                            <li>ප්‍රායෝගික කුසලතා: ඖෂධීය ශාක හඳුනාගැනීම, බැන්ද කිරීමේ ක්‍රම, කැඩුම් බිඳුණු වෙදකම (අස්ථි සැකසීම, සන්ධි ගැටීම් ප්‍රතිකාර, අර්ධ ගැටීම් කළමනාකරණය).</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Payment and CTA card in Sinhala -->
+                    <div style="background-color: var(--bg-light); padding: 30px; border-radius: var(--radius-md); border: 1px solid rgba(27, 94, 32, 0.08); align-self: start;">
+                        <h4 style="margin-bottom: 15px; color: var(--primary);">පාඨමාලා ගාස්තුව</h4>
+                        <div style="font-size: 2rem; font-weight: 800; color: var(--primary); margin-bottom: 20px;">රු. 50,000</div>
+                        
+                        <div style="background-color: var(--white); padding: 15px; border-radius: var(--radius-sm); margin-bottom: 25px; border-left: 4px solid var(--accent);">
+                            <p style="margin-bottom: 8px; font-size: 0.9rem;"><strong>1 වන වාරිකය:</strong> රු. 25,000 (ලියාපදිංචියේදී)</p>
+                            <p style="margin: 0; font-size: 0.9rem;"><strong>2 වන වාරිකය:</strong> රු. 25,000 (ප්‍රායෝගික පන්තිවලට පෙර)</p>
+                        </div>
+                        <a href="../contact/contact.html" class="btn btn-primary" style="width: 100%;">දැන්ම සම්බන්ධ වන්න</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Foreign Students Panel -->
+        <div id="foreign-students-panel" class="course-detail-pane">
+            <div class="course-info-layout">
+                <div>
+                    <h2>Traditional Orthopedic Medicine Course</h2>
+                    <p>Learn ancient Sri Lankan bone-setting techniques and traditional methods for managing fractures, dislocations, and musculoskeletal injuries. Tailored for practitioners and therapists globally.</p>
+                    
+                    <div class="course-meta-grid">
+                        <div class="course-meta-item">
+                            <i class="fa fa-clock"></i>
+                            <div>
+                                <h4>Duration</h4>
+                                <p>2 Weekends (4 Days) - 6 Hours Daily</p>
+                            </div>
+                        </div>
+                        <div class="course-meta-item">
+                            <i class="fa fa-user-md"></i>
+                            <div>
+                                <h4>Format</h4>
+                                <p>Theory + Intensive Practical</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="course-outline">
+                        <h3>Detailed Syllabus Breakdown</h3>
+                        <div class="outline-accordion">
+                            <div class="accordion-item open">
+                                <div class="accordion-header">
+                                    <h4>Day 1: Introduction & Foundations</h4>
+                                    <i class="fa fa-chevron-down"></i>
+                                </div>
+                                <div class="accordion-body">
+                                    <p>History of traditional Sri Lankan orthopedic medicine, pulse reading (Nadi Vignana), and botanical identification walks.</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <div class="accordion-header">
+                                    <h4>Day 2: Herbal Oils & Pastes</h4>
+                                    <i class="fa fa-chevron-down"></i>
+                                </div>
+                                <div class="accordion-body">
+                                    <p>Formulation of warm herbal oils, preparation of poultices (Paththu), and soft tissue massage techniques for immediate pain relief.</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <div class="accordion-header">
+                                    <h4>Day 3: Bone Setting & Dislocations</h4>
+                                    <i class="fa fa-chevron-down"></i>
+                                </div>
+                                <div class="accordion-body">
+                                    <p>Traditional bone alignment, joint reduction, and custom splints using local plants, bamboo, and linen bindings.</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <div class="accordion-header">
+                                    <h4>Day 4: Rehabilitation & Steam Therapy</h4>
+                                    <i class="fa fa-chevron-down"></i>
+                                </div>
+                                <div class="accordion-body">
+                                    <p>Medicated steam treatments, mobilization regimes, diet, and long-term preventative care. Final assessments and certificate presentation.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Payment and CTA card -->
+                <div style="background-color: var(--bg-light); padding: 30px; border-radius: var(--radius-md); border: 1px solid rgba(27, 94, 32, 0.08); align-self: start;">
+                    <h4 style="margin-bottom: 15px; color: var(--primary);">Investment Details</h4>
+                    <div style="font-size: 2rem; font-weight: 800; color: var(--primary); margin-bottom: 20px;">$350 USD</div>
+                    
+                    <ul class="footer-links-list" style="margin-bottom: 30px; font-size: 0.85rem; color: var(--text-muted);">
+                        <li><i class="fa fa-check text-accent" style="color: var(--accent);"></i> Course textbook manual</li>
+                        <li><i class="fa fa-check text-accent" style="color: var(--accent);"></i> All practice herbs & materials</li>
+                        <li><i class="fa fa-check text-accent" style="color: var(--accent);"></i> Certificate of Participation</li>
+                    </ul>
+                    <a href="../contact/contact.html" class="btn btn-primary" style="width: 100%;">Enroll Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Standards -->
+    <section class="section-padding reveal-on-scroll" style="background-color: rgba(255, 255, 255, 0.7); backdrop-filter: blur(5px);">
+        <div class="container" style="display: flex; align-items: center; gap: 50px;">
+            <div style="flex: 1;">
+                <div class="section-header" style="text-align: left; margin-bottom: 30px;">
+                    <span class="tagline">Professional Education</span>
+                    <h2>Accredited Training Programs</h2>
+                </div>
+                <p>Our academy is fully approved to operate by the Sri Lankan Government and complies with state standards as set forth in regulations. We are an organizational member of the National Ayurvedic Medical Association, ensuring quality native education standards.</p>
+            </div>
+            <div style="flex: 1; display: flex; justify-content: center;">
+                <img src="./images/traningmaindesign.jpg" alt="Academy Class Session" style="border-radius: var(--radius-md); box-shadow: var(--shadow-lg);">
+            </div>
+        </div>
+    </section>
+
+    <!-- Meet Our Instructors Section -->
+    <section class="section-padding container reveal-on-scroll" style="text-align: center; border-top: 1px solid rgba(27, 94, 32, 0.08);">
+        <div class="section-header">
+            <span class="tagline">Our Faculty</span>
+            <h2>Meet Our Instructors</h2>
+            <p>Learn from highly qualified traditional physicians and BAMS specialists.</p>
+        </div>
+        <div style="display: flex; justify-content: center; margin-top: 30px;">
+            <div class="feature-card" style="padding: 35px; max-width: 450px; text-align: center;">
+                <img src="./images/dr_samarakoon.jpg" alt="Dr. S.M.S. Samarakoon" style="width: 150px; height: 180px; object-fit: cover; border-radius: var(--radius-sm); margin: 0 auto 20px auto; display: block; border: 1.5px solid var(--accent);">
+                <h3 style="font-size: 1.3rem; margin-bottom: 5px; color: var(--primary);">Dr. S.M.S. Samarakoon</h3>
+                <h4 style="font-size: 1rem; color: var(--accent); margin-bottom: 15px; font-weight: 600;">Chief Physician</h4>
+                <p style="font-size: 0.9rem; color: var(--text-muted); margin: 0; line-height: 1.6;">BAMS (Honors), MS (Ayurveda), PhD<br>Over 30 years of medical practice and instruction in traditional orthopedic care.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Area -->
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-logo">
+                <img src="../../images/logo.png" alt="Weda Gedara Logo" style="max-height: 60px; width: auto; align-self: start; margin-bottom: 10px;">
+                <p>Traditional Sri Lankan Ayurvedic healing center with 30+ years of experience in holistic wellness.</p>
+                <div class="footer-socials">
+                    <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div>
+                <h4>Explore</h4>
+                <ul class="footer-links-list">
+                    <li><a href="../about/about.html">About Us</a></li>
+                    <li><a href="../academy/academy.html">Academy Details</a></li>
+                    <li><a href="../treatments/treatments.html">Treatments Info</a></li>
+                    <li><a href="../consultation/consultation.html">Consultation Options</a></li>
+                    <li><a href="../contact/contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Ayurveda Basics</h4>
+                <ul class="footer-links-list">
+                    <li><a href="../ayurveda/ayurveda.html">Five Elements</a></li>
+                    <li><a href="../ayurveda/ayurveda.html#doshas">The Three Doshas</a></li>
+                    <li><a href="../blog/blog.html">Wellness Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact-col">
+                <h4>Contact Info</h4>
+                <ul class="footer-contact-info">
+                    <li><i class="fa fa-map-marker-alt"></i> <span>No. 07, Helaweada Gedara, Boossa Junction, Boossa, Galle, Sri Lanka.</span></li>
+                    <li><i class="fa fa-phone"></i> <span>+94 714 260 158<br>+94 912 267 980</span></li>
+                    <li><i class="fa fa-envelope"></i> <span>info@helawedagedaraboossa.com</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Weda Gedara Ayurvedic Center. All rights reserved.</p>
+            <div class="dev-credit-wrapper">
+                <span>Developed By: <br>100 International Universe PVT Ltd web development team.</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../../js/script.js"></script>
+</body>
+</html>

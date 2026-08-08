@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../../images/logo.png">
+    <title>Consultations || Weda Gedara || Authentic Ayurvedic Center</title>
+    <meta name="description" content="Book an Ayurvedic consultation at Weda Gedara. Rates, special package options, and booking request form for remote or in-person therapies in Boossa.">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="../../css/style.css?v=1.2">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="site-header">
+        <div class="container header-container">
+            <a href="../../index.html" class="logo-wrapper">
+                <img src="../../images/logo.png" alt="Weda Gedara Logo" class="logo-img">
+                <div class="logo-text">
+                    <h1>Weda Gedara</h1>
+                    <span>Authentic Ayurveda</span>
+                </div>
+            </a>
+            <nav class="main-nav">
+                <ul class="nav-links">
+                    <li><a href="../../index.html" class="nav-item">Home</a></li>
+                    <li><a href="../about/about.html" class="nav-item">About</a></li>
+                    <li><a href="../academy/academy.html" class="nav-item">Academy</a></li>
+                    <li><a href="../ayurveda/ayurveda.html" class="nav-item">Ayurveda</a></li>
+                    <li><a href="../treatments/treatments.html" class="nav-item">Treatments</a></li>
+                    <li><a href="../consultation/consultation.html" class="nav-item active">Consultation</a></li>
+                    <li><a href="../contact/contact.html" class="nav-item">Contact</a></li>
+                    <li><a href="../../admin/admin.php" class="nav-item" target="_blank">Admin</a></li>
+                </ul>
+                <button class="mobile-toggler" aria-label="Toggle Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Mobile Nav Panel -->
+    <div class="mobile-nav-overlay"></div>
+    <div class="mobile-nav-panel">
+        <a href="../../index.html" class="nav-item">Home</a>
+        <a href="../about/about.html" class="nav-item">About</a>
+        <a href="../academy/academy.html" class="nav-item">Academy</a>
+        <a href="../ayurveda/ayurveda.html" class="nav-item">Ayurveda</a>
+        <a href="../treatments/treatments.html" class="nav-item">Treatments</a>
+        <a href="../consultation/consultation.html" class="nav-item active">Consultation</a>
+        <a href="../contact/contact.html" class="nav-item">Contact</a>
+        <a href="../../admin/admin.php" class="nav-item" target="_blank">Admin</a>
+    </div>
+
+    <!-- Page Header Hero -->
+    <section class="video-promo-section" style="background-image: url('./images/consultantHeader.jpg'); height: 360px; border-radius: 0; margin-top: var(--header-height);">
+        <div class="video-promo-content">
+            <h1 style="color: white; font-size: 2.8rem; margin-bottom: 5px;">Ayurvedic Consultation</h1>
+            <p style="color: rgba(255, 255, 255, 0.9); margin: 0;">Tailored Health Mapping & Native Diagnostics</p>
+        </div>
+    </section>
+
+
+    <!-- Large consultation intro image -->
+    <div class="container reveal-on-scroll" style="margin-top: 50px; text-align: center;">
+        <img src="./images/consultation_intro.jpg" alt="Ayurvedic Consultation Session" style="max-width: 1000px; width: 100%; border-radius: var(--radius-md); box-shadow: var(--shadow-lg);">
+    </div>
+
+    <!-- Consultation Info Grid -->
+    <section class="section-padding container reveal-on-scroll" style="padding-top: 50px;">
+        <div class="consultation-info-grid">
+            <div>
+                <h2>Professional Ayurvedic Assessment</h2>
+                <p>Consultations at Weda Gedara involve an in-depth evaluation of your body's bio-energies (Doshas). Our native practitioners employ traditional diagnostics like pulse checks, tongue mapping, and physical observation to locate toxins and functional imbalances.</p>
+                <p>Following the session, we detail a comprehensive recovery program. This program includes specialized therapies (such as Panchakarma baths or bone-setting), customized organic herbal medicines, dietary adjustments, and mindfulness guidelines matching your constitution.</p>
+                
+                <h3 style="margin: 40px 0 20px;">Consultation Rates</h3>
+                <div class="rates-table-wrapper">
+                    <table class="rates-table">
+                        <thead>
+                            <tr>
+                                <th>Doctor Tier</th>
+                                <th>90 Minutes</th>
+                                <th>60 Minutes</th>
+                                <th>30 Minutes (Follow-Up)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Specialist Physician</strong></td>
+                                <td id="rate_specialist_90">$240</td>
+                                <td id="rate_specialist_60">$180</td>
+                                <td id="rate_specialist_30">$100</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Practitioner</strong></td>
+                                <td id="rate_practitioner_90">$150</td>
+                                <td id="rate_practitioner_60">$120</td>
+                                <td id="rate_practitioner_30">$70</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Resident Doctor</strong></td>
+                                <td id="rate_resident_90">$90</td>
+                                <td id="rate_resident_60">$60</td>
+                                <td id="rate_resident_30">$40</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Side Card with Hours & Location -->
+            <div style="background-color: var(--white); padding: 35px; border-radius: var(--radius-md); box-shadow: var(--shadow-md); border: 1px solid rgba(27, 94, 32, 0.08); align-self: start;">
+                <h3 style="font-size: 1.3rem; margin-bottom: 24px; color: var(--primary);">Quick Info</h3>
+                <ul class="footer-contact-info" style="color: var(--text-dark); font-size: 0.9rem;">
+                    <li style="margin-bottom: 20px;"><i class="fa fa-clock" style="color: var(--accent);"></i> 
+                        <div>
+                            <strong>Hours</strong><br><span id="consultation_info_hours">Mon-Sat: 4:00 PM - 9:00 PM</span>
+                        </div>
+                    </li>
+                    <li style="margin-bottom: 20px;"><i class="fa fa-map-marker-alt" style="color: var(--accent);"></i> 
+                        <div>
+                            <strong>Location</strong><br><span id="consultation_info_location">Boossa Junction, Galle</span>
+                        </div>
+                    </li>
+                    <li style="margin-bottom: 20px;"><i class="fa fa-phone" style="color: var(--accent);"></i> 
+                        <div>
+                            <strong>Contact</strong><br><span id="consultation_info_contact">+94 714 260 158</span>
+                        </div>
+                    </li>
+                    <li><i class="fa fa-spa" style="color: var(--accent);"></i> 
+                        <div>
+                            <strong>Experience</strong><br><span id="consultation_info_experience">30+ Years Healing</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Health Conditions We Treat Section -->
+    <section class="section-padding reveal-on-scroll" style="background-color: var(--accent-light); border-top: 1px solid rgba(27, 94, 32, 0.08); border-bottom: 1px solid rgba(27, 94, 32, 0.08);">
+        <div class="container">
+            <div class="section-header">
+                <span class="tagline">Indications</span>
+                <h2>Health Conditions We Treat</h2>
+            </div>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 30px; margin-top: 45px;">
+                <div class="feature-card" style="padding: 25px; text-align: left; background: white; border: 1px solid rgba(27, 83, 41, 0.15) !important;">
+                    <h3 style="font-size: 1.15rem; margin-bottom: 15px; color: var(--primary);"><i class="fa fa-person-dress" style="color: var(--accent); margin-right: 10px;"></i> Gynecological Problems</h3>
+                    <ul style="list-style: none; padding: 0; font-size: 0.9rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 8px;">
+                        <li><i class="fa fa-circle" style="font-size: 0.4rem; color: var(--accent); vertical-align: middle; margin-right: 8px;"></i> Hormonal Imbalances</li>
+                        <li><i class="fa fa-circle" style="font-size: 0.4rem; color: var(--accent); vertical-align: middle; margin-right: 8px;"></i> Fertility Support</li>
+                        <li><i class="fa fa-circle" style="font-size: 0.4rem; color: var(--accent); vertical-align: middle; margin-right: 8px;"></i> Menstrual Disorders</li>
+                    </ul>
+                </div>
+                <div class="feature-card" style="padding: 25px; text-align: left; background: white; border: 1px solid rgba(27, 83, 41, 0.15) !important;">
+                    <h3 style="font-size: 1.15rem; margin-bottom: 15px; color: var(--primary);"><i class="fa fa-brain" style="color: var(--accent); margin-right: 10px;"></i> Neurological Problems</h3>
+                    <ul style="list-style: none; padding: 0; font-size: 0.9rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 8px;">
+                        <li><i class="fa fa-circle" style="font-size: 0.4rem; color: var(--accent); vertical-align: middle; margin-right: 8px;"></i> Stroke Recovery</li>
+                        <li><i class="fa fa-circle" style="font-size: 0.4rem; color: var(--accent); vertical-align: middle; margin-right: 8px;"></i> Sciatica Relief</li>
+                        <li><i class="fa fa-circle" style="font-size: 0.4rem; color: var(--accent); vertical-align: middle; margin-right: 8px;"></i> Migraine & Headache</li>
+                    </ul>
+                </div>
+                <div class="feature-card" style="padding: 25px; text-align: left; background: white; border: 1px solid rgba(27, 83, 41, 0.15) !important;">
+                    <h3 style="font-size: 1.15rem; margin-bottom: 15px; color: var(--primary);"><i class="fa fa-bone" style="color: var(--accent); margin-right: 10px;"></i> Musculoskeletal</h3>
+                    <ul style="list-style: none; padding: 0; font-size: 0.9rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 8px;">
+                        <li><i class="fa fa-circle" style="font-size: 0.4rem; color: var(--accent); vertical-align: middle; margin-right: 8px;"></i> Arthritis Care</li>
+                        <li><i class="fa fa-circle" style="font-size: 0.4rem; color: var(--accent); vertical-align: middle; margin-right: 8px;"></i> Cervical Spondylosis</li>
+                        <li><i class="fa fa-circle" style="font-size: 0.4rem; color: var(--accent); vertical-align: middle; margin-right: 8px;"></i> Lumbar Disc Diseases</li>
+                    </ul>
+                </div>
+                <div class="feature-card" style="padding: 25px; text-align: left; background: white; border: 1px solid rgba(27, 83, 41, 0.15) !important;">
+                    <h3 style="font-size: 1.15rem; margin-bottom: 15px; color: var(--primary);"><i class="fa fa-heart" style="color: var(--accent); margin-right: 10px;"></i> Other Conditions</h3>
+                    <ul style="list-style: none; padding: 0; font-size: 0.9rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 8px;">
+                        <li><i class="fa fa-circle" style="font-size: 0.4rem; color: var(--accent); vertical-align: middle; margin-right: 8px;"></i> Digestive Disorders</li>
+                        <li><i class="fa fa-circle" style="font-size: 0.4rem; color: var(--accent); vertical-align: middle; margin-right: 8px;"></i> Mental Wellness</li>
+                        <li><i class="fa fa-circle" style="font-size: 0.4rem; color: var(--accent); vertical-align: middle; margin-right: 8px;"></i> Skin Conditions</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Consultation Process Section -->
+    <section class="section-padding container reveal-on-scroll">
+        <div class="section-header">
+            <span class="tagline">Journey to health</span>
+            <h2>Our Consultation Process</h2>
+        </div>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin-top: 40px;">
+            <div class="feature-card" style="padding: 30px; text-align: left; background: white; border: 1px solid rgba(27, 83, 41, 0.15) !important;">
+                <h3 style="font-size: 1.1rem; color: var(--primary); margin-bottom: 10px;">1. Medical History Review</h3>
+                <p style="font-size: 0.85rem; color: var(--text-muted); margin: 0;">Detailed evaluation of past medical history, lifestyle factors, and present symptoms.</p>
+            </div>
+            <div class="feature-card" style="padding: 30px; text-align: left; background: white; border: 1px solid rgba(27, 83, 41, 0.15) !important;">
+                <h3 style="font-size: 1.1rem; color: var(--primary); margin-bottom: 10px;">2. Constitution Assessment</h3>
+                <p style="font-size: 0.85rem; color: var(--text-muted); margin: 0;">Evaluating your bio-energetic constitution (Prakriti) and current imbalances (Vikriti).</p>
+            </div>
+            <div class="feature-card" style="padding: 30px; text-align: left; background: white; border: 1px solid rgba(27, 83, 41, 0.15) !important;">
+                <h3 style="font-size: 1.1rem; color: var(--primary); margin-bottom: 10px;">3. Personalized Plan</h3>
+                <p style="font-size: 0.85rem; color: var(--text-muted); margin: 0;">Customizing therapeutic remedies, herbal medicines, and clinic regimes for recovery.</p>
+            </div>
+            <div class="feature-card" style="padding: 30px; text-align: left; background: white; border: 1px solid rgba(27, 83, 41, 0.15) !important;">
+                <h3 style="font-size: 1.1rem; color: var(--primary); margin-bottom: 10px;">4. Lifestyle Guidelines</h3>
+                <p style="font-size: 0.85rem; color: var(--text-muted); margin: 0;">Dietary routines, sleep habits, and yoga guidelines suited to your body's energy.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Packages Section -->
+    <section class="section-padding reveal-on-scroll" style="background-color: var(--accent-light); border-top: 1px solid rgba(27, 94, 32, 0.08); border-bottom: 1px solid rgba(27, 94, 32, 0.08);">
+        <div class="container">
+            <div class="section-header">
+                <span class="tagline">Wellness programs</span>
+                <h2>Special Packages</h2>
+            </div>
+            <div style="display: flex; gap: 30px; justify-content: center; margin-top: 40px; flex-wrap: wrap;">
+                <div class="feature-card" style="padding: 35px; width: 320px; text-align: center; background: white; border: 1px solid rgba(27, 83, 41, 0.15) !important;">
+                    <h3 style="font-size: 1.3rem; margin-bottom: 10px; color: var(--primary);">Metabolic Health Package</h3>
+                    <div style="font-size: 1.8rem; font-weight: 800; color: var(--accent); margin: 15px 0;">$200</div>
+                    <p style="font-size: 0.85rem; color: var(--text-muted);">Comprehensive 3-step metabolic restoration plan including diagnostic checks and detox treatments.</p>
+                </div>
+                <div class="feature-card" style="padding: 35px; width: 320px; text-align: center; background: white; border: 1px solid rgba(27, 83, 41, 0.15) !important;">
+                    <h3 style="font-size: 1.3rem; margin-bottom: 10px; color: var(--primary);">Wellness Assessment</h3>
+                    <div style="font-size: 1.8rem; font-weight: 800; color: var(--accent); margin: 15px 0;">From $80</div>
+                    <p style="font-size: 0.85rem; color: var(--text-muted);">Introductory wellness check including pulse reading and customized diet plan guidelines.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trusted Provider Section -->
+    <section class="section-padding container reveal-on-scroll">
+        <div class="about-layout" style="align-items: center; gap: 50px;">
+            <div class="about-images">
+                <img src="./images/trusted_provider.jpg" alt="Trusted Provider" style="border-radius: var(--radius-md); box-shadow: var(--shadow-lg); width: 100%;">
+            </div>
+            <div class="about-content">
+                <div class="section-header" style="text-align: left; margin-bottom: 25px;">
+                    <span class="tagline">Weda Gedara Care</span>
+                    <h2>Trusted Ayurvedic Healthcare Provider</h2>
+                </div>
+                <p>Weda Gedara stands as a beacon of natural healing in Galle Boossa, certified by local boards and backed by 30+ years of clinical excellence. We coordinate treatments to revive your organic wellness.</p>
+                <div style="display: flex; flex-direction: column; gap: 15px; margin-top: 25px;">
+                    <div style="display: flex; align-items: center; gap: 12px; font-weight: 600; color: var(--primary);"><i class="fa fa-circle-check" style="color: var(--accent);"></i> Experience & Trust Built Over 35 Years</div>
+                    <div style="display: flex; align-items: center; gap: 12px; font-weight: 600; color: var(--primary);"><i class="fa fa-circle-check" style="color: var(--accent);"></i> Highly experienced BAMS specialists and healers</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Request Appointment Form -->
+    <section class="section-padding reveal-on-scroll">
+        <div class="container">
+            <div class="section-header">
+                <span class="tagline">Schedule Now</span>
+                <h2>Request a Consultation Appointment</h2>
+                <p>Fill out the form below. Our care team will review doctor availability and reach out to confirm your slot.</p>
+            </div>
+            
+            <div class="appointment-card">
+                <form action="../../admin/submit_form.php" method="POST">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="first_name">First Name *</label>
+                            <input type="text" id="first_name" name="first_name" required placeholder="e.g. John">
+                        </div>
+                        <div class="form-group">
+                            <label for="last_name">Last Name *</label>
+                            <input type="text" id="last_name" name="last_name" required placeholder="e.g. Doe">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required placeholder="e.g. john@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required placeholder="e.g. +94 714 260 158">
+                        </div>
+                        <div class="form-group">
+                            <label for="consultation_type">Consultation Type *</label>
+                            <select id="consultation_type" name="consultation_type" required>
+                                <option value="">Select Option</option>
+                                <option value="specialist_90">Specialist - 90 mins ($240)</option>
+                                <option value="specialist_60">Specialist - 60 mins ($180)</option>
+                                <option value="specialist_30">Specialist - 30 mins ($100)</option>
+                                <option value="practitioner_90">Practitioner - 90 mins ($150)</option>
+                                <option value="practitioner_60">Practitioner - 60 mins ($120)</option>
+                                <option value="practitioner_30">Practitioner - 30 mins ($70)</option>
+                                <option value="resident_90">Resident - 90 mins ($90)</option>
+                                <option value="resident_60">Resident - 60 mins ($60)</option>
+                                <option value="resident_30">Resident - 30 mins ($40)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="preferred_time">Preferred Day / Time</label>
+                            <input type="text" id="preferred_time" name="preferred_time" placeholder="e.g. Tuesday Afternoon">
+                        </div>
+                        <div class="form-group form-group-full">
+                            <label for="message">Describe your health concerns</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Please describe any chronic pain, lifestyle goals, or medical conditions."></textarea>
+                        </div>
+                        <div class="form-group form-group-full" style="text-align: center; margin-top: 15px;">
+                            <button type="submit" class="btn btn-primary" style="padding: 14px 45px;">Request Slot</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Area -->
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-logo">
+                <img src="../../images/logo.png" alt="Weda Gedara Logo" style="max-height: 60px; width: auto; align-self: start; margin-bottom: 10px;">
+                <p>Traditional Sri Lankan Ayurvedic healing center with 30+ years of experience in holistic wellness.</p>
+                <div class="footer-socials">
+                    <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div>
+                <h4>Explore</h4>
+                <ul class="footer-links-list">
+                    <li><a href="../about/about.html">About Us</a></li>
+                    <li><a href="../academy/academy.html">Academy Details</a></li>
+                    <li><a href="../treatments/treatments.html">Treatments Info</a></li>
+                    <li><a href="../consultation/consultation.html">Consultation Options</a></li>
+                    <li><a href="../contact/contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Ayurveda Basics</h4>
+                <ul class="footer-links-list">
+                    <li><a href="../ayurveda/ayurveda.html">Five Elements</a></li>
+                    <li><a href="../ayurveda/ayurveda.html#doshas">The Three Doshas</a></li>
+                    <li><a href="../blog/blog.html">Wellness Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact-col">
+                <h4>Contact Info</h4>
+                <ul class="footer-contact-info">
+                    <li><i class="fa fa-map-marker-alt"></i> <span>No. 07, Helaweada Gedara, Boossa Junction, Boossa, Galle, Sri Lanka.</span></li>
+                    <li><i class="fa fa-phone"></i> <span>+94 714 260 158<br>+94 912 267 980</span></li>
+                    <li><i class="fa fa-envelope"></i> <span>info@helawedagedaraboossa.com</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Weda Gedara Ayurvedic Center. All rights reserved.</p>
+            <div class="dev-credit-wrapper">
+                <span>Developed By: <br>100 International Universe PVT Ltd web development team.</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../../js/script.js"></script>
+</body>
+</html>
