@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../../images/logo.png">
+    <title>Contact Us || Weda Gedara || Authentic Ayurvedic Center</title>
+    <meta name="description" content="Get in touch with Weda Gedara Ayurvedic Center in Boossa, Galle. Find map locations, email addresses, phone contacts, and message forms.">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="../../css/style.css?v=1.2">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="site-header">
+        <div class="container header-container">
+            <a href="../../index.html" class="logo-wrapper">
+                <img src="../../images/logo.png" alt="Weda Gedara Logo" class="logo-img">
+                <div class="logo-text">
+                    <h1>Weda Gedara</h1>
+                    <span>Authentic Ayurveda</span>
+                </div>
+            </a>
+            <nav class="main-nav">
+                <ul class="nav-links">
+                    <li><a href="../../index.html" class="nav-item">Home</a></li>
+                    <li><a href="../about/about.html" class="nav-item">About</a></li>
+                    <li><a href="../academy/academy.html" class="nav-item">Academy</a></li>
+                    <li><a href="../ayurveda/ayurveda.html" class="nav-item">Ayurveda</a></li>
+                    <li><a href="../treatments/treatments.html" class="nav-item">Treatments</a></li>
+                    <li><a href="../consultation/consultation.html" class="nav-item">Consultation</a></li>
+                    <li><a href="../contact/contact.html" class="nav-item active">Contact</a></li>
+                    <li><a href="../../admin/admin.php" class="nav-item" target="_blank">Admin</a></li>
+                </ul>
+                <button class="mobile-toggler" aria-label="Toggle Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Mobile Nav Panel -->
+    <div class="mobile-nav-overlay"></div>
+    <div class="mobile-nav-panel">
+        <a href="../../index.html" class="nav-item">Home</a>
+        <a href="../about/about.html" class="nav-item">About</a>
+        <a href="../academy/academy.html" class="nav-item">Academy</a>
+        <a href="../ayurveda/ayurveda.html" class="nav-item">Ayurveda</a>
+        <a href="../treatments/treatments.html" class="nav-item">Treatments</a>
+        <a href="../consultation/consultation.html" class="nav-item">Consultation</a>
+        <a href="../contact/contact.html" class="nav-item active">Contact</a>
+        <a href="../../admin/admin.php" class="nav-item" target="_blank">Admin</a>
+    </div>
+
+    <!-- Page Header Hero -->
+    <section class="video-promo-section" style="background-image: url('./images/contactHeader.jpg'); height: 360px; border-radius: 0; margin-top: var(--header-height);">
+        <div class="video-promo-content">
+            <h1 style="color: white; font-size: 2.8rem; margin-bottom: 5px;">Contact Us</h1>
+            <p style="color: rgba(255, 255, 255, 0.9); margin: 0;">Get in Touch for Consultations, Treatments, and Academy Enrollment</p>
+        </div>
+    </section>
+
+    <!-- Contact Details Split Layout -->
+    <section class="section-padding container reveal-on-scroll">
+        <div class="contact-grid">
+            <!-- Left Info Panel -->
+            <div>
+                <div class="section-header" style="text-align: left; margin-bottom: 30px;">
+                    <span class="tagline">Contact Now</span>
+                    <h2>We Look Forward to Healing with You</h2>
+                </div>
+                <p>For bookings, academy registration, or queries about our traditional bone-setting and Panchakarma programs, reach out using the details shown or send a direct inquiry.</p>
+                <div class="footer-socials" style="margin-top: 25px;">
+                    <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <!-- Right Form Panel -->
+            <div class="appointment-card" style="margin: 0; padding: 40px;">
+                <form action="../../admin/submit_form.php" method="POST">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="first_name">First Name *</label>
+                            <input type="text" id="first_name" name="first_name" required placeholder="John">
+                        </div>
+                        <div class="form-group">
+                            <label for="last_name">Last Name *</label>
+                            <input type="text" id="last_name" name="last_name" required placeholder="Doe">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required placeholder="john@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required placeholder="+94 714 260 158">
+                        </div>
+                        <div class="form-group">
+                            <label for="inquiry_type">Inquiry Type *</label>
+                            <select id="inquiry_type" name="inquiry_type" required>
+                                <option value="">Select Option</option>
+                                <option value="consultation">Book Consultation</option>
+                                <option value="treatment">Treatment Information</option>
+                                <option value="academy">Academy Courses</option>
+                                <option value="general">General Inquiry</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="location">Your Country / City</label>
+                            <input type="text" id="location" name="location" placeholder="e.g. Galle, Sri Lanka">
+                        </div>
+                        <div class="form-group form-group-full">
+                            <label for="message">Your Message *</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Describe your health goals or specific program interest."></textarea>
+                        </div>
+                        <div class="form-group form-group-full" style="text-align: center; margin-top: 15px;">
+                            <button type="submit" class="btn btn-primary" style="padding: 14px 45px;">Send Message</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Info Cards & Map Side-by-Side -->
+    <section class="section-padding container reveal-on-scroll" style="padding-top: 0;">
+        <div class="contact-info-map-grid">
+            <!-- Left: Contact Details Cards Stacked -->
+            <div style="display: flex; flex-direction: column; gap: 20px;">
+                <div class="feature-card" style="padding: 25px; text-align: left; display: flex; align-items: center; gap: 20px;">
+                    <div class="feature-icon-wrapper" style="margin: 0; flex-shrink: 0;"><i class="fa fa-map-marker-alt"></i></div>
+                    <div>
+                        <h3 style="margin-bottom: 5px; font-size: 1.15rem;">Visit Our Center</h3>
+                        <p style="margin: 0; font-size: 0.9rem;">No. 07, Helaweada Gedara, Boossa Junction, Boossa, Galle, Sri Lanka.</p>
+                    </div>
+                </div>
+                
+                <div class="feature-card" style="padding: 25px; text-align: left; display: flex; align-items: center; gap: 20px;">
+                    <div class="feature-icon-wrapper" style="margin: 0; flex-shrink: 0;"><i class="fa fa-envelope"></i></div>
+                    <div>
+                        <h3 style="margin-bottom: 5px; font-size: 1.15rem;">Send Email</h3>
+                        <p style="margin: 0; font-size: 0.9rem;">info@helawedagedaraboossa.com</p>
+                    </div>
+                </div>
+                
+                <div class="feature-card" style="padding: 25px; text-align: left; display: flex; align-items: center; gap: 20px;">
+                    <div class="feature-icon-wrapper" style="margin: 0; flex-shrink: 0;"><i class="fa fa-phone"></i></div>
+                    <div>
+                        <h3 style="margin-bottom: 5px; font-size: 1.15rem;">Call Helpline</h3>
+                        <p style="margin: 0; font-size: 0.9rem;">+94 714 260 158<br>+94 912 267 980</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Right: Google Map -->
+            <div style="height: 380px; border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-md);">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3969.234567890123!2d80.163231!3d6.072133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae173bb6932fce9%3A0x4a35b903f9c64c88!2sHela%20Weda%20Gedara%20Boossa!5e0!3m2!1sen!2slk!4v1620000000000!5m2!1sen!2slk" 
+                    width="100%" 
+                    height="100%" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy"
+                    title="Weda Gedara Boossa Location Map">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Area -->
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-logo">
+                <img src="../../images/logo.png" alt="Weda Gedara Logo" style="max-height: 60px; width: auto; align-self: start; margin-bottom: 10px;">
+                <p>Traditional Sri Lankan Ayurvedic healing center with 30+ years of experience in holistic wellness.</p>
+                <div class="footer-socials">
+                    <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div>
+                <h4>Explore</h4>
+                <ul class="footer-links-list">
+                    <li><a href="../about/about.html">About Us</a></li>
+                    <li><a href="../academy/academy.html">Academy Details</a></li>
+                    <li><a href="../treatments/treatments.html">Treatments Info</a></li>
+                    <li><a href="../consultation/consultation.html">Consultation Options</a></li>
+                    <li><a href="../contact/contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Ayurveda Basics</h4>
+                <ul class="footer-links-list">
+                    <li><a href="../ayurveda/ayurveda.html">Five Elements</a></li>
+                    <li><a href="../ayurveda/ayurveda.html#doshas">The Three Doshas</a></li>
+                    <li><a href="../blog/blog.html">Wellness Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact-col">
+                <h4>Contact Info</h4>
+                <ul class="footer-contact-info">
+                    <li><i class="fa fa-map-marker-alt"></i> <span>No. 07, Helaweada Gedara, Boossa Junction, Boossa, Galle, Sri Lanka.</span></li>
+                    <li><i class="fa fa-phone"></i> <span>+94 714 260 158<br>+94 912 267 980</span></li>
+                    <li><i class="fa fa-envelope"></i> <span>info@helawedagedaraboossa.com</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Weda Gedara Ayurvedic Center. All rights reserved.</p>
+            <div class="dev-credit-wrapper">
+                <span>Developed By: <br>100 International Universe PVT Ltd web development team.</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../../js/script.js"></script>
+</body>
+</html>
