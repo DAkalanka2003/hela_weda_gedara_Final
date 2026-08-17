@@ -1843,4 +1843,30 @@ input:focus, select:focus, textarea:focus {
     display: block;
 }
 
+/* Responsive accredited section grid */
+.accredited-section-layout {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 30px;
+    align-items: center;
+}
+
+.accredited-section-layout img {
+    width: 100%;
+    max-width: 550px;
+    height: auto;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-lg);
+}
+
+@media (min-width: 768px) {
+    .accredited-section-layout {
+        flex-direction: row;
+        gap: 50px;
+    }
+    .accredited-section-layout > div {
+        flex: 1;
+    }
+}
+
 
