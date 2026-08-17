@@ -908,21 +908,41 @@ ul {
 
 .selector-card-box:hover, .selector-card-box.active {
     border-color: var(--accent) !important;
-    transform: translateY(-4px);
-    background-color: rgba(255, 255, 255, 0.65) !important;
+    transform: translateY(-8px) scale(1.02);
+    background-color: rgba(255, 255, 255, 0.75) !important;
+    box-shadow: 0 15px 35px rgba(10, 46, 22, 0.08) !important;
+}
+
+.language-content {
+    animation: tabFadeInUp 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+@keyframes tabFadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .selector-card-box .icon-box {
     width: 65px;
     height: 65px;
     border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.6);
-    color: var(--accent);
+    background-color: var(--primary-light);
+    color: var(--white) !important;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 1.8rem;
     margin: 0 auto 20px;
+}
+
+.selector-card-box .icon-box i {
+    color: var(--white) !important;
 }
 
 .selector-card-box h3 {
@@ -975,9 +995,10 @@ ul {
     border: 1px solid rgba(255, 255, 255, 0.45);
 }
 
+/* Make icons inside green meta circles white */
 .course-meta-item i {
     font-size: 1.4rem;
-    color: var(--accent);
+    color: var(--white) !important;
 }
 
 .course-meta-item h4 {
@@ -1734,6 +1755,12 @@ input:focus, select:focus, textarea:focus {
 
 .btn-primary {
     animation: soft-glow 3s infinite ease-in-out !important;
+}
+
+@media (min-width: 600px) {
+    .instructor-qualification-item {
+        white-space: nowrap;
+    }
 }
 
 
