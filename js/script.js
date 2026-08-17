@@ -81,7 +81,20 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // 4. Advanced Canvas: Immersive Sri Lankan Coconut Palms & Subtle Leaf Particles
-    const canvasContainer = document.getElementById('bg-canvas-container');
+    let canvasContainer = document.getElementById('bg-canvas-container');
+    if (!canvasContainer) {
+        canvasContainer = document.createElement('div');
+        canvasContainer.id = 'bg-canvas-container';
+        canvasContainer.style.position = 'fixed';
+        canvasContainer.style.top = '0';
+        canvasContainer.style.left = '0';
+        canvasContainer.style.width = '100%';
+        canvasContainer.style.height = '100%';
+        canvasContainer.style.zIndex = '-1';
+        canvasContainer.style.pointerEvents = 'none';
+        document.body.appendChild(canvasContainer);
+    }
+    
     if (canvasContainer) {
         const canvas = document.createElement('canvas');
         canvasContainer.appendChild(canvas);
